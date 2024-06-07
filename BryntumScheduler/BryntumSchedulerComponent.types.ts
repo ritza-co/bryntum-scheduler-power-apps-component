@@ -1,5 +1,5 @@
-import { databasePrefix } from "./constants";
-import { IInputs } from "./generated/ManifestTypes";
+import { databasePrefix } from './constants';
+import { IInputs } from './generated/ManifestTypes';
 
 export interface IBryntumSchedulerComponentProps {
   context?: ComponentFramework.Context<IInputs>;
@@ -21,10 +21,10 @@ type RecordItem = {
 } & SchedulerEvent & SchedulerResource & SchedulerDependency & SchedulerAssignment;
 
 export type SyncData = {
-  action: "dataset" | "add" | "remove" | "update";
+  action: 'dataset' | 'add' | 'remove' | 'update';
   records: RecordItem[];
   store: {
-    id: "events" | "resources" | "dependencies" | "assignments";
+    id: 'events' | 'resources' | 'dependencies' | 'assignments';
   };
 };
 
@@ -139,7 +139,7 @@ export type SchedulerDependencyDataverse = {
 };
 
 export type SchedulerAssignment = {
-  id: string; 
+  id: string;
   eventId: string;
   resourceId: string;
 };
