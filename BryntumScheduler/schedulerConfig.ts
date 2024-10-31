@@ -1,10 +1,8 @@
 import type { BryntumSchedulerProps } from '@bryntum/scheduler-react';
 
 const schedulerConfig: Partial<BryntumSchedulerProps> = {
-    features : {
-        stripe       : true,
-        dependencies : true
-    },
+    stripeFeature: true,
+    dependenciesFeature: true,
     columns       : [{ text : 'Name', field : 'name', width : 250 }],
     viewPreset    : 'hourAndDay',
     startDate     : new Date(2024, 6, 1, 9),
